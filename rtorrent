@@ -121,7 +121,7 @@ d_stop() {
 
 getsession() { 
 	session=`awk '/^[[:space:]]*session[[:space:]]*=[[:space:]]*/{print($3)}' "$config"`
-	echo $session
+	echo /home/rt/.rtsession
 }
 
 checkcnfg
