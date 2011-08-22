@@ -18,9 +18,9 @@ download_rate = 1500
 upload_rate = 100
 
 # Default directory to save the downloaded torrents.
-directory = /home/rt/torrents/incomplete
+directory = /home/rt/torrents/doing
 
-system.method.set_key = event.download.finished,move_complete,"execute=mv,-u,$d.get_base_path=,/home/rt/torrents/complete/;d.set_directory=/home/rt/torrents/complete/"
+system.method.set_key = event.download.finished,move_complete,"execute=mv,-u,$d.get_base_path=,/home/rt/torrents/done/;d.set_directory=/home/rt/torrents/done/"
 
 # Default session directory. Make sure you don't run multiple instance
 # of rtorrent using the same session directory. Perhaps using a
